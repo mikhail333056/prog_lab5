@@ -1,0 +1,4 @@
+id,Name,x,y,creationDate,height,weight,hairColor,nationality,xLoc,yLoc,zLoc
+1,Artem,0,0,2019-02-22T11:37:58.074816+02:00[Africa/Cairo],1,9,RED,USA,0,0,0
+3,Maxlox,0,0,2019-02-22T11:37:58.074816+02:00[Africa/Cairo],1,100,YELLOW,INDIA,0,0,0
+4,Oleh,0,0,2019-02-22T11:37:58.074816+02:00[Africa/Cairo],2,-,BROWN,ITALY,0,0,0

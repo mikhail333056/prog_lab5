@@ -1,0 +1,5 @@
+id,Name,x,y,creationDate,height,eyeColor,hairColor,nationality,xLoc,yLoc,zLoc,nameLoc
+1,Artem,0,0,2019-02-22,1,YELLOW,RED,USA,0,0,0,Boston
+3,Maxlox,0,0,2019-02-22,1,WHITE,YELLOW,CHINA,0,0,0,Beijing
+4,Oleh,0,0,2019-02-22,2,BROWN,BROWN,ITALY,0,0,0,Rome
+5,Lox,1,2,2007-01-01,1,RED,RED,CHINA,2,2,8,Hong-kong
