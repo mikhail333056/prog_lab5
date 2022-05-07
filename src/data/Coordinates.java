@@ -6,38 +6,38 @@ import exceptions.IncorrectValueException;
  * A class that implements work with storing the values of the coordinates of the location of persons in the collection
  */
 public class Coordinates {
-    private float x; //Значение поля должно быть меньше 749, Поле не может быть null
-    private int y; //Минимальное значение поля: -599
+    private Integer x; //Максимальное значение поля: 749, Поле не может быть null
+    private long y; //Значение поля должно быть больше -599
     Coordinates (final Coordinates coordinates) {
         x = coordinates.x;
         y = coordinates.y;
     }
     Coordinates () {}
 
-    public void setX (final Float x) throws IncorrectValueException {
+    public void setX (final Integer x) throws IncorrectValueException {
         if (x >= 749)
-            throw new IncorrectValueException("значение координаты x должно быть больше -645");
+            throw new IncorrectValueException("значение координаты x должно быть не больше 749");
         if (x == null)
             throw new IncorrectValueException("координата x не может быть пустым");
         this.x = x;
     }
 
-    public Float getX() {
+    public Integer getX() {
         return x;
     }
 
-    public void setY (final int y) throws IncorrectValueException {
+    public void setY (final long y) throws IncorrectValueException {
         if (y <= -599)
-            throw new IncorrectValueException("значение координаты y должно быть не больше 727");
+            throw new IncorrectValueException("значение координаты y должно быть больше -599");
         this.y = y;
     }
 
-    public int getY() {
+    public long getY() {
         return y;
     }
 
     @Override
     public String toString () {
-        return "{\"x\" : " + Float.toString(x) + ", \"y\" : " + Integer.toString(y) + "}";
+        return "{\"x\" : " + Integer.toString(x) + ", \"y\" : " + Long.toString(y) + "}";
     }
 }

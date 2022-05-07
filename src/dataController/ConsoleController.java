@@ -48,14 +48,14 @@ public class ConsoleController {
             person.setName(input);
 
             System.out.println("Заполнение координат местоположения человека...");
-            System.out.print("Введите координату x, большую -645: ");
+            System.out.print("Введите координату x, меньшую 749: ");
             input = scanner.nextLine();
             try {
-                person.getCoordinates().setX(Float.parseFloat(input));
+                person.getCoordinates().setX(Integer.parseInt(input));
             } catch (NumberFormatException e) {
                 throw new IncorrectValueException("x должно быть числом с плавающей точкой");
             }
-            System.out.print("Введите координату y, меньшую 727: ");
+            System.out.print("Введите координату y, большую -599: ");
             input = scanner.nextLine();
             try {
                 person.getCoordinates().setY(Integer.parseInt(input));
@@ -153,7 +153,7 @@ public class ConsoleController {
             System.out.println("Введите координату X местоположения человека, большую -645: ");
             input = scanner.nextLine();
             if (!input.equals(""))
-                person.getCoordinates().setX(Float.parseFloat(input));
+                person.getCoordinates().setX(Integer.parseInt(input));
             else System.out.println("Поле не было изменено");
         } catch (IncorrectValueException | NumberFormatException e) {
             System.out.println("Некорректно введена координата X, поле осталось прежним.");

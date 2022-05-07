@@ -3,3 +3,4 @@ id,Name,x,y,creationDate,height,eyeColor,hairColor,nationality,xLoc,yLoc,zLoc,na
 3,Maxlox,0,0,2019-02-22,1,WHITE,YELLOW,CHINA,0,0,0,Beijing
 4,Oleh,0,0,2019-02-22,2,BROWN,BROWN,ITALY,0,0,0,Rome
 5,Lox,1,2,2007-01-01,1,RED,RED,CHINA,2,2,8,Hong-kong
+6,dogdog,0,0,2007-01-02,3,RED,BROWN,CHINA,2,3,4,Mancheste

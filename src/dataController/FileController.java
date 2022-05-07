@@ -106,7 +106,7 @@ public class FileController {
         person.setName(args[1]);
 
         try {
-            person.getCoordinates().setX(Float.parseFloat(args[2]));
+            person.getCoordinates().setX(Integer.parseInt(args[2]));
         } catch (NumberFormatException e) {
             throw new IncorrectValueException("значение координаты x не является числом с плавающей точкой");
         }
