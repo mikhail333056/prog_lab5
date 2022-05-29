@@ -14,6 +14,6 @@ public class Main {
         return System.getenv(getSystemEnvironment());
     }
     public static void main(String[] args) {
-        CommandController controller = new CommandController("test.csv");
+        CommandController controller = new CommandController(getFilePath());
     }
 }
